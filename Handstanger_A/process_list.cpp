@@ -17,9 +17,9 @@
 void init_process_list(ProcessList* pl){
 // BAU: re-activated the next three lines.
 for (size_t i = 0; i < MAX_LIST_ENTRIES; i++) { // BAU: changed from magic number 14 to MAX_LIST_ENTRIES
-pl->processes[i] = 0;
-}
-pl->length = 0;
+    pl->processes[i] = 0;
+  }
+  pl->length = 0;
 }
 
 int get_length(const ProcessList* pl){
